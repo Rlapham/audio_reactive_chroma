@@ -37,7 +37,7 @@ while ret is True:
     tempAudio = translate(sound[audioCount].rms, 0, audioMax, 0, 765)
     # print tempAudio
 
-    for i in range (0, 720):
+    for i in range (0, 640):
         for a in range (0, 1280):
             tempVal = img[i][a]
             tempTot = tempVal[0] + tempVal[1] + tempVal[2]
