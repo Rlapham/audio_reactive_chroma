@@ -50,4 +50,4 @@ while ret is True:
     cv2.imwrite("files/rain/frame%d.jpg" % count, img)     # save frame as JPEG file
 
     count += 1
-    audioCount += 30
+    audioCount += 20
