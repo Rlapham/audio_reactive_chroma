@@ -20,4 +20,4 @@ finalHold = clips_array([[first1, first2],
 
 
 # composition = mp.concatenate(clips)
-finalHold.write_videofile("files/N5_K.mp4")
+finalHold.write_videofile("files/N5_K.mp4", fps=20)

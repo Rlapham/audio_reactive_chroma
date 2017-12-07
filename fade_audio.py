@@ -44,10 +44,10 @@ while ret is True:
             if tempTot < tempAudio:
                 img[i][a] = (255, 255, 0)
 
-    # cv2.imshow('img', img)
-    # cv2.waitKey(0)
-    # cv2.destroyAllWindows()
-    cv2.imwrite("rain/frame%d.jpg" % count, img)     # save frame as JPEG file
+    cv2.imshow('img', img)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
+    # cv2.imwrite("rain/frame%d.jpg" % count, img)     # save frame as JPEG file
 
     count += 1
-    audioCount += 20
+    audioCount += 30
