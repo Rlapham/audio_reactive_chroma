@@ -5,8 +5,8 @@ import moviepy.editor as mp
 from pydub import AudioSegment
 
 
-sound = AudioSegment.from_file("files/rain.mp4")
-vidcap = cv2.VideoCapture('/Users/richardlapham/desktop/fade/files/rain.mp4')
+sound = AudioSegment.from_file("files/clouds_wind.wav")
+vidcap = cv2.VideoCapture('/Users/richardlapham/desktop/fade/files/clouds_pro.mp4')
 
 valArray = []
 count = 0
@@ -42,12 +42,12 @@ while ret is True:
             tempVal = img[i][a]
             tempTot = tempVal[0] + tempVal[1] + tempVal[2]
             if tempTot < tempAudio:
-                img[i][a] = (255, 255, 0)
+                img[i][a] = (180,175,0)
 
-    cv2.imshow('img', img)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
-    # cv2.imwrite("rain/frame%d.jpg" % count, img)     # save frame as JPEG file
+    # cv2.imshow('img', img)
+    # cv2.waitKey(0)
+    # cv2.destroyAllWindows()
+    cv2.imwrite("clouds/frame%d.jpg" % count, img)     # save frame as JPEG file
 
     count += 1
     audioCount += 30

@@ -16,7 +16,6 @@ clip2 = Clip(video2)
 
 clips = [clip2, clip1]
 
-
 comp = Composition(clips, bgcolor='#ffffff')
 comp.save('output/test.mp4')
 comp.preview()
